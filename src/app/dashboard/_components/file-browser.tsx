@@ -140,7 +140,7 @@ export function FileBrowser({
           </div>
         </TabsContent>
         <TabsContent value="table">
-          {/* <DataTable columns={columns} data={modifiedFiles} /> */}
+          <p>Tablas en proceso</p>
         </TabsContent>
       </Tabs>
 
