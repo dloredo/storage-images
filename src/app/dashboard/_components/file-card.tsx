@@ -44,7 +44,18 @@ export function FileCard({
       </CardHeader>
       <CardContent className="h-[200px] flex justify-center items-center">
         {file.type === "image" && file.url && (
-          <Image alt={file.name} width="200" height="100" src={file.url} />
+          <Image
+            alt={file.name}
+            src={file.url}
+            layout="intrinsic"
+            width={200}
+            height={100}
+            style={{
+              objectFit: "contain",
+              maxWidth: "100%",
+              maxHeight: "100%",
+            }}
+          />
         )}
 
         {file.type === "csv" && <GanttChartIcon className="w-20 h-20" />}
